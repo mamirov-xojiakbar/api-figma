@@ -14,19 +14,19 @@
       <form @submit.prevent="loginUser" class="flex flex-col gap-5">
         <label for="">
           Email
-          <input v-model="userData.username" class="w-full py-3 px-5 border rounded outline-none focus:border-primary"
+          <input v-model="userData.username" class="w-full py-3 px-5 border rounded outline-none focus:border-primary focus:border-red-200"
             type="text">
         </label>
         
         <label for="">
           Password
-          <input v-model="userData.password" class="w-full py-3 px-5 border rounded outline-none focus:border-primary"
+          <input v-model="userData.password" class="w-full py-3 px-5 border rounded outline-none focus:border-primary focus:border-red-200"
             type="text">
         </label>
 
         <h2 v-if="isError" class="text-red-500">Login or Password wrong</h2>
 
-        <button class="py-3 px-5 text-xl bg-primary rounded text-white bg-[#FEAF00] mt-[20px]">SIGN IN</button>
+        <button class="py-3 px-5 text-xl bg-primary rounded text-white bg-[#FEAF00] mt-[20px] hover:bg-[#b68b3c] ">SIGN IN</button>
 
         <div class="flex justify-center gap-1">
           <p class="text-center font-normal text-[14px] leading-[17.07px] opacity-[70%]">Forgot your password?</p>
